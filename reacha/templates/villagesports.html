@@ -1,0 +1,381 @@
+{% extends "base.html" %}
+{% block content %}
+  <style>
+    label {
+  color: #5d5dff;
+}
+#gallery {
+  color: white;
+}
+
+#gallery-box {
+  display: block;
+  position: relative;
+  max-height: 400px;
+  width: 100%;
+  overflow: scroll;
+  width: 100%;
+}
+
+#gallery-box::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+#gallery-box::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+#gallery-box::-webkit-scrollbar-thumb {
+  background: #5d5dff;
+}
+
+#gallery-box::-webkit-scrollbar-thumb:hover {
+  background: #7d7dff;
+}
+
+#gallery-count {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  height: 50px;
+  text-decoration: none;
+}
+
+#gallery-img {
+  display: flex;
+  min-height: 400px;
+  min-width: 600px;
+  height: auto;
+  background: #e5e5e5;
+  text-align: center;
+  background-image: url("https://loremflickr.com/800/600/dog?lock=10");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery-thumbnails {
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid white;
+}
+
+.gallery-thumbnails img {
+  float: left;
+  width: 10%;
+  cursor: pointer;
+  padding: 0;
+  filter: grayscale(1);
+  min-height: 25px;
+}
+
+.gallery-thumbnails img:hover {
+  filter: none !important;
+}
+     @media screen and (max-width: 1920px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 800px;
+        }
+      }
+     @media screen and (max-width: 992px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 400px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+
+        .howwedo-img{
+          width:300px;
+          height:auto;
+        }
+         .my-gallery{
+          height: 400px;
+        }
+
+}
+   .carousel {
+  position: relative;
+}
+.carousel-item img {
+  object-fit: cover;
+}
+#carousel-thumbs {
+  background: rgba(255,255,255,.3);
+  bottom: 0;
+  left: 0;
+  padding: 0 50px;
+  right: 0;
+}
+#carousel-thumbs img {
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+#carousel-thumbs img:hover {
+  border-color: rgba(255,255,255,.3);
+}
+#carousel-thumbs .selected img {
+  border-color: #fff;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+}
+@media all and (max-width: 767px) {
+  .carousel-container #carousel-thumbs img {
+    border-width: 3px;
+  }
+}
+@media all and (min-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    position: absolute;
+  }
+}
+@media all and (max-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    background: #ccccce;
+  }
+}
+
+
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+
+   
+  </style>
+  
+
+
+<section style="margin-top: 135px;">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid"  src="/static/images/Village_sports.png"  alt="First slide">
+
+    </div>
+</div>
+</div>
+</section>
+    <section>
+
+      <div class="container">
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">ABOUT <span style="color: white">THE PROJECT</span></h1>
+          </div>
+        </div>
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-bottom: 3%;">
+                <div class="col-lg-8 col-md-8">
+                <p data-aos="fade-right" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;text-align: justify;">
+              A unique initiative for integrated child development through sports was led by former national Squash Champion - Ritwik Bhattacharya. The initiative was supported by Nathani Steel.
+            </p>
+          </div>
+          <div class='col-lg-2 col-md-2 col-sm-2' >
+    <div style="background: white;margin-top: 10%;height: 150px;">
+             <p style="text-align:center;font-family: Georgia,serif;font-size: 12px;font-style: italic;color:black;padding-top: 10px;">In this Page</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;margin-left: 5px;">About The Project</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;margin-left: 5px;">Gallery</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;margin-left: 5px;">Project Report</p>
+             </div>
+           <div>
+           
+       </div>
+</div>
+        </div>
+      </section>
+      
+
+
+
+
+
+
+
+<!--<div class="container text-center my-3">
+    <h1 style="font-family: Nunito;">Gallery</h2>
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img  src="/static/images/ndpl_back5.JPG" style="width:100%;height: auto">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="/static/images/ndpl2.JPG">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="/static/images/ndpl3.JPG">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="/static/images/ndpl4.JPG">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="/static/images/ndpl5.JPG">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="/static/images/ndpl6.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <h5 class="mt-2">Advances one slide at a time</h5>
+</div>-->
+<!--Carousel Wrapper-->
+  <style>
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+  	position:relative;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+    -moz-transform:scale(1.20); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.20); /* Opera */
+    transform:translatZ(0) scale(1.20);
+}
+
+.img-hover:hover:after {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    width:2px;
+    height:2px;
+}
+
+</style>
+ <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="background:#e6e8e2">
+      <h1 style="font-size:2.5rem;padding-top: 2%;color: black">GALLERY</h1>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="row img-hover" style="margin-left: 5%;margin-right: 5%;margin-bottom: 5%">
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/sports1.JPG" style="width:385px;height:289px">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/sports2.jpeg" style="width:385px;height:289px">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/sports.JPG" style="width:385px;height:289px">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/sports4.jpeg" style="width:385px;height:289px">
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item" >
+        <div class="row img-hover" style="margin-left: 5%;margin-right: 5%;margin-bottom: 5%">
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/sports5.jpeg" style="width:385px;height:289px">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/sports6.jpeg" style="width:385px;height:289px">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/sports7.jpeg" style="width:385px;height:289px">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/sports8.jpeg" style="width:385px;height:289px">
+            </div>
+        </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="fas fa-chevron-circle-left" style="font-size: 40px;padding-top: 15%;color:black;" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="fas fa-chevron-circle-right" style="font-size: 40px;padding-top: 15%;color:black;" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+
+<div>
+<h1 style="font-size:2.5rem;text-transform: uppercase;padding-top: 2%;">Project <span style="color:#70b6bc;">Report</span></h1>
+<iframe src="https://onedrive.live.com/embed?cid=BF3CB31BD91053C4&resid=BF3CB31BD91053C4%2116934&authkey=AJ6GAx2GRiQkbi4&em=2" width="100%" height="500" frameborder="0" scrolling="no"></iframe> 
+</div>
+</div>
+
+    
+  </div>
+{% endblock %}

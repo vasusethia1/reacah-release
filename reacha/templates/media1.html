@@ -1,0 +1,558 @@
+{% extends "base.html" %}
+{% block content %}
+  
+  <style>
+    label {
+  color: #5d5dff;
+}
+#gallery {
+  color: white;
+}
+
+#gallery-box {
+  display: block;
+  position: relative;
+  max-height: 400px;
+  width: 100%;
+  overflow: scroll;
+  width: 100%;
+}
+
+#gallery-box::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+#gallery-box::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+#gallery-box::-webkit-scrollbar-thumb {
+  background: #5d5dff;
+}
+
+#gallery-box::-webkit-scrollbar-thumb:hover {
+  background: #7d7dff;
+}
+
+#gallery-count {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  height: 50px;
+  text-decoration: none;
+}
+
+#gallery-img {
+  display: flex;
+  min-height: 400px;
+  min-width: 600px;
+  height: auto;
+  background: #e5e5e5;
+  text-align: center;
+  background-image: url("https://loremflickr.com/800/600/dog?lock=10");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery-thumbnails {
+  display: flex;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 2px solid white;
+}
+
+.gallery-thumbnails img {
+  float: left;
+  width: 10%;
+  cursor: pointer;
+  padding: 0;
+  filter: grayscale(1);
+  min-height: 25px;
+}
+
+.gallery-thumbnails img:hover {
+  filter: none !important;
+}
+     @media screen and (max-width: 1920px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 800px;
+        }
+      }
+     @media screen and (max-width: 992px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 400px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+
+        .howwedo-img{
+          width:300px;
+          height:auto;
+        }
+         .my-gallery{
+          height: 400px;
+        }
+
+}
+    .carousel-inner img {
+    width: 100%;
+    height: 100%
+    }
+
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+
+    .carousel-item img {
+        width: 100%
+    }
+
+  </style>
+
+  
+
+<section style="margin-top: 135px;">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid"  src="/static/images/media.png"  alt="First slide">
+
+    </div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+        <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10" style="background: #b6985e;">
+   
+                  <h1 style="color: black;font-size: 2.5rem;">SDGs THROUGH<span style="color: white"> CSR </span></h1>
+          </div>
+          </div>
+          <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-5" style="padding-top: 2%;">
+          <img src="/static/images/webinar1.jpg" class="img-fluid">
+        </div>
+      </div>
+          <div class="row justify-content-center" data-aos="fade-left" style="padding-top: 2%;">
+            <div class="col-lg-8 col-md-8 col-sm-8"><p style="text-align: justify;color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;"><span style="font-weight: 700">Decoding the Voluntary National Report (VNR) 2020 on SDGs - 'Decade of Action: Taking SDGs from Global to Local’ </span> <br><br>
+
+A wonderful discussion took place on Saturday 29 August 2020 involving NITI Aayog, Global Compact Network - India, Sattva Consulting, CSR Spark and HCL Foundation.<br><br> 
+
+REACHA as CSO (Civil Society Organisation) partner facilitated a dialogue on the Voluntary National Report (VNR) 2020 that was presented by NITI Aayog at the UN this July 2020. Key deliberations focused on the role CSR can play to strengthen efforts to achieve stated impact parameters across Sustainable Development Goals SDGs - through collaboration, convergence and co-creation between all stakeholders - Government, Corporates, Civil Society and Communities. Thank you to Mr. Muniraju SB Deputy Advisor, NITI Aayog, Dr. Bhaskar Chatterjee (IAS Retd.), Former DG & CEO, IICA Ms. Nidhi Pundhir, Director HCL Foundation, Mr. Srikrishna Sridhar Murthy, CEO, Sattva Consulting Limited, Mr. Kamal Singh, Executive Director, UN GCNI, Mr. Aseem Kumar, Head Asia Pacific Resource Center, UN GCNI and Mr. RK Krishnaswamy, Founder CSR Spark </p></div>
+            
+        <div class='col-lg-2 col-md-2 col-sm-2' style="background: white;height: 250px;">
+             <p style="text-align:center;font-family: Georgia,serif;font-size: 12px;font-style: italic;color:black;margin-top: 10px;">In this Page</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">SDGs THROUGH CSR</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">ONGC KASHMIR WITH INDIAN ARMY</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">EDUCATION AND CHILD DEVELOPEMENT</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">TESTIMONIALS</p>
+</div>
+      </div>
+      <div class="row justify-content-center" data-aos="fade-left" style="padding-top: 2%;">
+        <div class="col-lg-8 col-md-8">
+        <img src="/static/images/Event Brochure.jpeg">
+      </div>
+      </div>
+      
+    </div>
+  </section>
+<section>
+  <div class="container">
+        <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">ONGC KASHMIR<span style="color: white"> WITH INDIAN ARMY</span></h1>
+          </div>
+          </div>
+          <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-5" style="padding-top: 2%;">
+          <img src="/static/docs/WEBINAR POSTER.jpeg" class="img-fluid">
+        </div>
+      </div>
+          <div class="row justify-content-center" data-aos="fade-left" style="padding-top: 2%;">
+            <div class="col-lg-8 col-md-8 col-sm-8">
+            
+
+    ARMY SETS UP 'NAUJAWAN CLUBS' ACROSS VALLEY TO GIVE SKILL TRAINING - <span style="font-weight: 700;text-transform: uppercase;"><a href="https://www.youtube.com/watch?v=obOeiznDaM8" target="_blank">Click Here</a></span><br><br> 
+
+    THE HIDDEN TRUTH OF KASHMIR - <span style="font-weight: 700;text-transform: uppercase;"><a href="https://www.youtube.com/watch?v=3SfCD2BzLdw" target="_blank">Click Here</a></span><br><br>
+
+    ARMY INAUGURATES REHABILITATION PROJECT AT URI - <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/Army inaugurates rehabilitation project at Uri.pdf" target="_blank">Click Here</a></span><br><br>
+
+    OFFICIALS OF ONGC AND REACHA VISIT TO CHINAR NAU JAWAN CLUB, BARAMULLA - <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/OFFICIALS OF ONGC AND REACHA VISIT TO CHINAR NAU JAWAN CLUB, BARAMULLA.pdf" target="_blank">Click Here</a></span> <br><br>
+
+    CHINAR CORPS TWITTER - <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/CHINAR CORPS TWITTER.pdf" target="_blank">Click Here</a></span> <br><br>
+
+    BARAMULLA STUDENTS VISIT ONGC OFFICE, NEW DELHI - <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/images/BARAMULLA STUDENTS VISIT ONGC OFFICE, NEW DELHI.jpg" target="_blank">Click Here</a></span> <br><br>
+
+    BARAMULLA STUDENTS VISIT ONGC OFFICE, NEW DELHI (2) - <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/images/BARAMULLA STUDENTS VISIT ONGC OFFICE, NEW DELHI 1.jpg" target="_blank">Click Here</a></span> <br><br>
+    
+        </div>
+        <div class='col-lg-2 col-md-2 col-sm-2' style="background: white;height: 200px;">
+             <p style="text-align:center;font-family: Georgia,serif;font-size: 12px;font-style: italic;color:black;margin-top: 10px;">In this Page</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">ONGC KASHMIR WITH INDIAN ARMY</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">EDUCATION AND CHILD DEVELOPEMENT</p>
+              <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">TESTIMONIALS</p>
+</div>
+      </div>
+      
+    </div>
+  </section>
+<section style="background:#f1efec;">
+  <div class="container">
+  <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">EDUCATION AND<span style="color: white"> CHILD DEVELOPEMENT</span></h1>
+          </div>
+          </div>
+          <div class="row justify-content-center" data-aos="fade-left" style="padding-top: 2%;">
+            <div class="col-lg-10 col-md-10 col-sm-10" style="font-size: 16px;font-family:Georgia,serif;line-height: 30px;text-align: justify;color:rgb(0,0,0,0.9)">
+                  DPS AMRITSAR <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/DPS AMRITSAR.JPG" target="_blank">Click Here</a></span><br><br> 
+
+    DPS AMRITSAR 2 <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/DPS AMRITSAR 2.JPG" target="_blank">Click Here</a></span><br><br> 
+
+    DPS DWARKA – TEACHER TRAINING <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/DPS DWARKA - TEACHER TRAINING.jpeg" target="_blank">Click Here</a></span><br><br> 
+
+    SESSION WITH BEL CHILDREN <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/SESSION WITH BEL CHILDREN.pdf" target="_blank">Click Here</a></span><br><br>
+
+    CBSE COMMITTEE MEMBER - STRATEGY FOR CCE <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/CBSE COMMITTEE MEMBER - Strategy for CCE.pdf" target="_blank">Click Here</a></span><br><br>
+
+    NIEPA DIRECTOR FOR SAMEER CLUBS <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/NIEPA DIRECTOR FOR SAMEER CLUBS.JPG" target="_blank">Click Here</a></span><br><br>
+
+    LATE SRI RAKESH MITTAL, IAS FOR SAMEER CLUBS  SRI RAKESH MITTAL, <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/images/SRI RAKESH MITTAL, IAS FOR SAMEER CLUBS.JPG" target="_blank">Click Here</a></span><br><br>
+
+    VIDYASHILP - MAITREYA CLUBS <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/VIDYASHILP - MAITREYA CLUBS.pdf" target="_blank">Click Here</a></span><br><br> 
+
+    TATA POWER – ZIP FOLDER- <span style="font-weight: 700;text-transform: uppercase;"><a  href="/static/docs/TATA POWER.zip" target="_blank">Click Here</a></span> 
+            
+
+    
+</div>
+      </div>
+    </div>
+  </section>
+<section >
+  <div class="container">
+  <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">TESTIMONIALS</h1>
+          </div>
+        </div>
+          <div class="row justify-content-center" data-aos="fade-left" style="padding-top: 2%;">
+            <div class="col-lg-10 col-md-10 col-sm-10" style="font-size: 16px;font-family:Georgia,serif;line-height: 30px;text-align: justify;color:rgb(0,0,0,0.9)">
+               
+
+    LETTER FOR NP FROM INDIAN ARMY - <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/LETTER FOR NP FROM INDIAN ARMY.pdf" target="_blank">Click Here</a></span><br><br> 
+
+    NIKHIL PANT TESTIMONIAL DG, IICA- <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/docs/NIKHIL PANT TESTIMONIAL DG, IICA.pdf" target="_blank">Click Here</a></span><br><br> 
+
+    SECRETARY EDUCATION FOR BOOK BAT FOR ALL SEASONS - <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/images/SECRETARY EDUCATION FOR BOOK BAT FOR ALL SEASONS.JPG" target="_blank">Click Here</a></span><br><br>
+
+    LATE SRI RAKESH MITTAL, IAS FOR BAT FOR ALL SEASONS - <span style="font-weight: 700;text-transform: uppercase;"><a href="/static/images/LATE SRI RAKESH MITTAL, IAS FOR BAT FOR ALL SEASONS.JPG" target="_blank">Click Here</a></span><br><br> 
+                  </div>
+                </div>
+
+    
+</div>
+      </div>
+    </div>
+    <!--
+  </section>
+      <section>
+          <div class="flex-container">
+              <div class="row" style="margin-top: 5%;margin-left: 5%;margin-right: 5%;margin-bottom: 5%">
+                  <div class="col-lg-12">
+                      <div class="card-columns">
+                          <div class="card text-center text-white bg-dark border-warning">
+                              <img src="/static/images/icons/pdf.png" class="card-img-cap" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Vidyashilp Maitriyaclub<br></h5><br><br>
+                              <a href="/static/docs/Vidyashilp_Maitriyaclub.pdf" class="btn btn-warning" role="button">DOWNLOAD</a>
+                               
+                            </div>
+                          </div>
+                          <div class="card text-center text-white bg-dark border-warning">
+                              <img src="/static/images/icons/pdf.png" class="card-img-cap" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Student Counselling</h5>
+                                <p class="card-text">Bel-Certificates</p>
+                    
+                                <a href="/static/docs/BEL_Certificates.pdf" class="btn btn-warning" role="button">DOWNLOAD</a>
+                            </div>
+                          </div>
+                          <div class="card text-center text-white bg-dark border-warning">
+                              <img src="/static/images/icons/pdf.png" class="card-img-cap" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">TATA POWER</h5>
+                                <p class="card-text">North Delhi Power Limited</p>
+                               
+                                <a href="/static/docs/North Delhi Power Limited...reacha work.pdf" class="btn btn-warning" role="button">DOWNLOAD</a>
+                                
+
+                            </div>
+                          </div>
+                          <div class="card text-center text-white bg-dark border-warning">
+                              <img src="/static/images/icons/pdf.png" class="card-img-cap" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">TATA POWER</h5>
+                                <p class="card-text">NDPL CLIP</p>
+                               
+                                <a href="/static/docs/ndpl_clip.pdf" class="btn btn-warning" role="button">DOWNLOAD</a>
+                            </div>
+                          </div>
+                          <div class="card text-center text-white bg-dark border-warning">
+                              <img src="/static/images/icons/pdf.png" class="card-img-cap" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">ONGC Kashmir with Army</h5>
+                                <p class="card-text">Army Inaugurates Rehabilitation Project</p>
+                                
+                                <a href="/static/docs/Army inaugurates rehabilitation project at Uri - Scoop News Jammu Kashmir.pdf" class="btn btn-warning" role="button">DOWNLOAD</a>
+                            </div>
+                          </div>
+                          <div class="card text-center text-white bg-dark border-warning">
+                              <img src="/static/images/icons/pdf.png" class="card-img-cap" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">ONGC Kashmir with Army</h5>
+                                <p class="card-text">Officials of ONGC and REACHA visit to Chinar Nau Jawan Club</p>
+                             
+                                <a href="/static/docs/OFFICIALS OF ONGC AND REACHA VISIT TO CHINAR NAU JAWAN CLUB, BARAMULLA.pdf" class="btn btn-warning" role="button">DOWNLOAD</a>
+                            </div>
+                          </div>
+                          <div class="card text-center text-white bg-dark border-warning">
+                              <img src="/static/images/icons/pdf.png" class="card-img-cap" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">TATA POWER</h5>
+                                <p class="card-text">Newspaper Clips</p>
+                               
+                                <a href="/static/docs/news_paper_cutting.pdf" class="btn btn-warning" role="button">DOWNLOAD</a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section style="background:#e6e8e2 ">
+        <div class="container">
+          <div class="row" style="padding-bottom: 3%;">
+              <div class="col-lg-12">
+                  <h1 style="font-size:2.5rem;padding-bottom: 3%;padding-top: 2%;">SCHOOL <span style="color:#70b6bc">SESSIONS</span> </h1>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                  
+                  <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/DSCN1932.jpg);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;padding-top: 3%;"><p style="color: white;text-align: center;padding-top: 100px;padding-bottom: 2%;" data-toggle="modal" data-target=".bd-example-modal-lg">School Session 1</p></div>
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <img src="/static/images/DSCN1932.JPG" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                 
+                   <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/DSCN1933.JPG);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;"><p style="color: white;text-align: center;padding-top: 100px" data-toggle="modal" data-target="#modal2">School Session 2</p></div>
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal2">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <img src="/static/images/DSCN1933.JPG" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                  
+                  <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/school_ses.PNG);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;"><p style="color: white;text-align: center;padding-top: 100px" data-toggle="modal" data-target="#modal3">School Session 2</p></div>
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal3">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <img src="/static/images/school_ses.PNG" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row">
+          <div class="col-lg-12 col-md-12">
+
+                  <h1 style="font-size:2.5rem;padding-top:2%;padding-bottom: 2%">TATA <span style="color:#70b6bc"> POWER</span></h1>
+              </div>
+          </div>
+          <div class="row justify-content-center" style="padding-bottom: 3%;">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+                 
+                  <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/TATA_Power.JPG);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;"><p style="color: white;text-align: center;padding-top: 100px" data-toggle="modal" data-target="#modal4">TATA POWER 1</p></div>
+                </div>
+
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal4">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <img src="/static/images/TATA_Power.JPG" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+              
+               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" >
+                                    <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/TATApower2.PNG);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;"><p style="color: white;text-align: center;padding-top: 100px" data-toggle="modal" data-target="#modal5">TATA POWER 2</p></div>
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal5">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <img src="/static/images/TATApower2.PNG" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </section>
+      <section style="background:#e6e8e2 ">
+          <div class="flex-container">
+            <h1 style="font-size:2.5rem;padding-top:2%;padding-bottom: 2%">TESTIMONIALS</span></h1>
+              <div class="row" style="padding-bottom: 2%;">
+                  <div class="col-lg-12">
+                      <div class="card-columns">
+                          <div class="card text-center text-white bg-dark border-warning">
+                              <img src="/static/images/icons/pdf.png" class="card-img-cap" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">TESTIMONIALS</h5>
+                                <p class="card-text">BAT FOR ALL SEASONS</p>
+                                
+                                 <a href="/static/docs/CBSE COMMITTEE MEMBER - Strategy for Effective Implementation of CCE reg_.pdf" class="btn btn-warning" role="button">DOWNLOAD</a>
+                            </div>
+                          </div>
+                          <div class="card text-center text-white bg-dark border-warning">
+                              <img src="/static/images/icons/pdf.png" class="card-img-cap" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">TESTIMONIALS</h5>
+                                <p class="card-text">INDIAN ARMY</p>
+                               
+                                <a href="/static/docs/LETTER FOR NP FROM INDIAN ARMY - MAY2020.pdf" class="btn btn-warning" role="button">DOWNLOAD</a>
+                            </div>
+                          </div>
+                          <div class="card text-center text-white bg-dark border-warning">
+                              <img src="/static/images/icons/pdf.png" class="card-img-cap" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">TESTIMONIALS</h5>
+                                <p class="card-text">IICA WORK IN CSR LAW</p>
+                               
+                                <a href="/static/docs/NIKHIL PANT TESTIMONIAL DG, IICA.pdf" class="btn btn-warning" role="button">DOWNLOAD</a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section>
+        <div class="flex-container">
+          <div class="row justify-content-center" style="padding-top: 2%;">
+              <div class="col-lg-12">
+                  <h1 style="font-size:2.5rem;margin-bottom: 2%">BAT FOR <span style="color: #70b6bc">ALL SEASONS</h1>
+              </div>
+           
+        </div>
+          <div class="row justify-content-center" style="padding-bottom: 3%;">
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                  <center>
+                  <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/Bat1.JPG);background-size: cover;background-repeat: no-repeat;padding-top: 3%;height: 250px;width:250px;"><p style="color: white;text-align: center;padding-top: 100px;padding-bottom: 2%;" data-toggle="modal" data-target=".bd-example-modal-lg">Letter 1</p></div></center>
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <img src="/static/images/Bat1.JPG" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                 <center>
+                  <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/Bat2.JPG);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;padding-top: 3%;"><p style="color: white;text-align: center;padding-top: 100px;padding-bottom: 2%;" data-toggle="modal" data-target="#modal2">Letter 2</p></div></center>
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal2">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <img src="/static/images/Bat2.JPG" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                  <center>
+                  <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/Bat3.JPG);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;padding-top: 3%;"><p style="color: white;text-align: center;padding-top: 100px;padding-bottom: 2%;" data-toggle="modal" data-target="#modal3">Letter 3</p></div></center>
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal3">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <img src="/static/images/Bat3.JPG" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                  <center>
+                  <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/Bat4.JPG);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;padding-top: 3%;"><p style="color: white;text-align: center;padding-top: 100px;padding-bottom: 2%;" data-toggle="modal" data-target="#modal4">Letter 4</p></div></center>
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal4">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <img src="/static/images/Bat4.JPG" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                 <center>
+                   <div style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/static/images/Bat5.JPG);height: 250px;width:250px;background-size: cover;background-repeat: no-repeat;padding-top: 3%;"><p style="color: white;text-align: center;padding-top: 100px;padding-bottom: 2%;" data-toggle="modal" data-target="#modal5">Letter 5</p></div></center>
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal5">
+                      <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                          <img src="/static/images/Bat5.JPG" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </section>
+
+
+    
+  </div>-->
+  {% endblock %}

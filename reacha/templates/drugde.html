@@ -1,0 +1,259 @@
+{% extends "base.html" %}
+{% block content %}
+    <style>
+       @media screen and (max-width: 1920px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 800px;
+        }
+      }
+     @media screen and (max-width: 992px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 400px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+
+        .howwedo-img{
+          width:300px;
+          height:auto;
+        }
+         .my-gallery{
+          height: 400px;
+        }
+
+}
+    .carousel-inner img {
+    width: 100%;
+    height: 100%
+    }
+
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+
+    .carousel-item img {
+        width: 100%
+    }
+       #custCarousel1 .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel1 .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel1 .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel1 .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel1 .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+       #custCarousel2 .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel2 .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel2 .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel2 .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel2 .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+</style>
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="H8b8hcIs"></script>
+
+<!--MODALS-->
+
+
+   
+<section style="margin-top: 135px;">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid"  src="/static/images/Drugbanner.png"  alt="First slide">
+        
+    </div>
+</div>
+</div>
+</section>
+    <section>
+          <div class="container">
+              
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-12" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">ABOUT <span style="color: white">THE PROJECT</span></h1>
+          </div>
+          </div>
+              <div class="row justify-content-center" data-aos="fade-right" >
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <p data-aos="fade-left" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;;padding-top: 2%;line-height:30px;text-align: justify;">Drug De-addiction Center (DDC), Baramulla, located within Army campus, is an innovative initiative run by REACHA with support from ONGC, to curb the menace of drug abuse with active counseling for the youth, coupled by de-addiction medication and by spreading awareness through seminars at regular intervals. DDC run by the army is the most successful as compared to other governmental and non-governmental organisations in the area.<br><br> 
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Project Goal:</span> To dissuade the youth of Kashmir from drugs and include them in mainstream and to give them a drug free and healthy life so they can play a constructive role in the society.<br><br>
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Target Beneficiaries: </span>About 40% of the youth of Kashmir (both boys and girls) in the age group of 16-25 form the vulnerable communities. We cover 1200 such youth each year.</p></div>
+<div class='col-lg-2 col-md-2 col-sm-2' style="background: white;margin-top: 2%;height: 150px;">
+             <p style="text-align:center;font-family: Georgia,serif;font-size: 12px;font-style: italic;color:black;margin-top: 10px;">In this Page</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">About The Project</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">Gallery</p>
+             
+           
+         
+             
+
+          </div> 
+
+<div class="row justify-content-center" style="padding-bottom: 2%;padding-top: 2%;">
+<div class="col-md-5 col-lg-5">
+    <center>
+<img src="/static/images/drug2.JPG" style="border-radius: 10px;border:2px solid black;" data-aos="fade-left" class="img-fluid">
+</center>
+</div>
+<div class="col-lg-5 col-md-5">
+    <center>
+  <img src="/static/images/ddc5.jpg" style="border-radius: 10px;border:2px solid black;" data-aos="fade-left" class="img-fluid">
+  </center>
+</div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-lg-10 col-md-10">
+<p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;;padding-top: 2%;line-height:30px;text-align: justify;padding-bottom: 2%;" data-aos="fade-left"><span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Area Covered:</span> Baramulla, J&K</span><br><br>
+
+Kashmir has a severe problem of drug menace which is compounded by militancy. The success achieved by the effort of the Indian Army has shown the possibilities of curbing this menace. Lack of infrastructure and norms of the existing society are hindrances which need to be addressed at all levels. DDC at Baramulla is a noble initiative which has assisted in bridging the gap between the populace and the Army and assist in bringing normalcy to the strife-torn region. <br><br>
+
+Positively impacted youth are encouraged to take up livelihood enhancement trainings by Indian Army at Chinar 9 Jawan Club, Baramulla – which is also supported by ONGC and implemented by REACHA.<br><br> 
+
+The war against drug abuse to ensure a healthy and prosperous Kashmir requires to be continued relentlessly till such time the menace is eradicated from the society.  <br><br>
+
+DDC has been devised to ensure rehabilitation of the addicts. Once taken care of, REACHA encourages their skilling and placements in gainful jobs through Chinar 9 Jawan Club. This seeks to reduce the chances of youth slipping back into addiction or be brainwashed into militancy. The real world connect at DDC brings in aspects of positive social change that the youth and their parents are benefitted from.   <br>
+
+
+
+</div>
+</div>
+
+
+</section> 
+<style>
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+  	position:relative;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+    -moz-transform:scale(1.20); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.20); /* Opera */
+    transform:translatZ(0) scale(1.20);
+}
+
+.img-hover:hover:after {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    width:2px;
+    height:2px;
+}
+
+</style>
+
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="background: #e6e8e2">
+      <h1 style="font-size:2.5rem;padding-top: 2%;color: black;">GALLERY</h1>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="row img-hover" style="margin-left: 5%;margin-right: 5%;margin-bottom: 5%">
+            <div class="col-lg-4 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/ddcgall4.JPG" class="img-fluid ">
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/ddcgall3.jpg" class="img-fluid ">
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/ddcgall1.JPG" class="img-fluid ">
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="row img-hover" style="margin-left: 5%;margin-right: 5%;margin-bottom: 5%">
+            <div class="col-lg-4 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/drug4.jpg" style="width:524px;height:393px">
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/ddc3.jpg" style="width:524px;height:393px">
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/ddc2.jpg" style="width:524px;height:393px">
+            </div>
+        </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="fas fa-chevron-circle-left" style="font-size: 40px;padding-top: 15%;color:white;" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="fas fa-chevron-circle-right" style="font-size: 40px;padding-top: 15%;color:white;" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    
+  </div>
+{% endblock %}

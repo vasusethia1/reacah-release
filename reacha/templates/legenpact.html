@@ -1,0 +1,373 @@
+{% extends "base.html" %}
+{% block content %}
+    <style>
+       @media screen and (max-width: 1920px){
+    
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 800px;
+        }
+      }
+     @media screen and (max-width: 992px){
+    
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 400px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+
+        .howwedo-img{
+          width:300px;
+          height:auto;
+        }
+         .my-gallery{
+          height: 400px;
+        }
+     
+}
+    .carousel-inner img {
+    width: 100%;
+    height: 100%
+    }
+
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+
+    .carousel-item img {
+        width: 100%
+    }
+       #custCarousel1 .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel1 .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel1 .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel1 .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel1 .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+       #custCarousel2 .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel2 .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel2 .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel2 .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel2 .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+</style>
+
+
+
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="H8b8hcIs"></script>
+
+<!--MODALS-->
+
+
+   
+<section style="margin-top: 135px;">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid"  src="/static/images/Simple Work Blog Banner (7).png"  alt="First slide">
+        
+    </div>
+</div>
+</div>
+</section>
+    <section>
+          <div class="container">
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-10 col-sm-10" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">ABOUT <span style="color: white">THE PROJECT</span></h1>
+          </div>
+          </div>
+          <div class="row justify-content-center"  data-aos="fade-left" >
+              <div class="col-md-8 col-lg-8 col-sm-8">
+                  <p data-aos="fade-right" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;text-align: justify;">
+                    Indian Army has been pro-active in promoting and running various developmental initiatives in the Kashmir Valley. These efforts are being manifested through a well-developed and regulated project called ‘Operation Sadhbhavana’. <br><br>
+
+
+<span style="text-transform:uppercase;color:#70b6bc;font-weight: 700;">Chinar 9 Jawan Club:</span><br> Since April 2016, Indian Army, in partnership with corporate funders and in collaboration with REACHA (Research and Extension Association for Conservation Horticulture and Agro-Forestry), a voluntary organization, has given a platform to the youth of Baramulla in the form of Chinar 9 Jawan Club where students can come from different socio- economic backgrounds and benefit from job-oriented trainings. The Club has trained more than 1000 youth since 2016 in various courses which includes Basic Computer, Computer hardware & Communicative English apart from Hospitality, Retails and Fashion Designing, with about 60% of them placed and / or provided livelihood enhancement. However, due to the conflict zone situation in the valley, many of the youth leave their jobs/earning activities and show a tendency to go back/engage in anti-national activities. In order to overcome this, REACHA and the Indian Army, with support from Genpact/NASSCOM Foundation initiated an innovative Cell for Livelihood Enhancement (CLE) for Hospitality and Fashion Designing and associated programs like SHG and Mentoring at the Chinar 9 Jawan Club from November 2018, with the objective to enhance livelihood prospects for the youth in a sustained long-term manner. 
+</p>
+</div>
+<div class='col-lg-2 col-md-2 col-sm-2' style="background: white;margin-top: 2%;height: 150px;">
+             <p style="text-align:center;font-family: Georgia,serif;font-size: 12px;font-style: italic;color:black;margin-top: 10px;">In this Page</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">About The Project</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">Project Presentation</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">Gallery</p>
+</div>
+</div>
+<div class="row justify-content-center" data-aos="left" style="padding-bottom: 2%;padding-top: 2%;">
+<div class="col-md-5 col-lg-5">
+<img src="/static/images/cell2.JPG" class="img-fluid" style="border-radius: 10px;border:2px solid black;">
+</div>
+<div class="col-lg-5 col-md-5">
+  <img src="/static/images/cell7.jpg" class="img-fluid" style="border-radius: 10px;border:2px solid black;">
+</div>
+</div>
+<div class="row justify-content-center"  data-aos="fade-left" style="padding: 10px">
+    <div class="col-md-10 col-lg-10 col-sm-10">
+                  <p data-aos="fade-right" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;border-top:2px solid black;text-align: justify;">CLE has been successful in providing a positive impact to Indian Army and REACHA efforts by strengthening livelihood enhancement – placements for jobs and entrepreneurship for women through Self Help Groups (SHGs). <br> 
+
+Since November 2018, following activities have been taken up:
+<ul data-aos="fade-right">
+
+    <li style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;"> Tracking youths who have been trained since April 2016 and engage with them in a constructive manner so that they are able to find a career path. Thus, a Student Mentoring Programme (SMP) has been initiated with guidance from Genpact. This activity faced a lot of difficulty since all communication lines were halted in the region by Government for security reasons after abrogation of Article 370 in early August 2019. However, effort was made by word-of-mouth to obtain as much data as possible. </li>
+
+    <li style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;text-align: justify;"> Setting up Self Help Groups 2 nos. (SHGs) of women in Fashion Design. These became fully functional as of December 2019, with actual income flows beginning through market access/sales etc.</li>
+
+    <li style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;text-align: justify;"> Youth scholarships were provided to deserving students to promote their quest for livelihood enhancement. The idea here is that once they join jobs/are in the process of getting placed/further provided market aligned training, they require funds to stay afloat and keep working hard. It has been observed that since their schooling has been quite weak, most who get jobs are paid less than their peers. This further discourages them and provides them with another reason to leave and go back home. Scholarships came as a boon and provided an incentive to ensure good attendance, studies, OJT and other follow-up actions. Some scholarships were also provided as travel and stay support so that can join further/higher order training and for on-the-job trainings (OJT).</li> <br> 
+</ul>
+</p>
+</div>
+</div>
+<div class="row" style="padding-bottom: 2%;">
+<div class="col-md-12 col-lg-12 text-center">
+<img src="/static/images/cell5.JPG"  style="width:50%;height: auto;border-radius: 10px;border:2px solid black;">
+</div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-md-10 col-lg-10">
+    <p  style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;border-top:2px solid black;text-align: justify;"data-aos="fade-left">By taking up the above activities, the larger aim was to:</p>
+    <ul data-aos="fade-left">
+
+    <li data-aos="fade-right" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;line-height:30px;text-align: justify;">Engage with the youth at a deeper level so that they are gradually weaned away from the lure of anti-national activities and can make informed positive choices to enable a bright future for themselves and their families. </li> 
+
+    <li data-aos="fade-right" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;text-align: justify;">Empower women by giving them vocational skills that are easy to learn and implement in J&K. </li> 
+
+    <li data-aos="fade-right" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;text-align: justify;">Facilitate their family’s livelihood enhancement – by getting these women to take up jobs in boutiques etc. or to start enterprises of their own.</li>  
+
+    <li data-aos="fade-right" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;text-align: justify;">Mainstream Kashmiri youths/families into national fabric.</li> 
+
+    <li data-aos="fade-right" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;text-align: justify;">Strengthen Indian Army’s efforts at bringing peace to the valley, which is one of the most disturbed geographies in the world today, through socio-economic development of local communities of youth – with focus on livelihood enhancement.</li> 
+</ul>
+<p style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;">The CLE has taken up the following action/initiatives since inception upto December 2019: </p> 
+<table class="table table-bordered table-dark">
+  <caption class="text-center">Table 1: Follow-up (as part of Genpact/NF project) of youth trained since April 2016  </caption>
+  <thead>
+    <tr>
+      <th scope="col" style="font-family: Nunito;font-weight:bold;">Courses </th>
+      <th scope="col" style="font-family: Nunito;font-weight:bold;">Numbers Trained </th>
+      <th scope="col" style="font-family: Nunito;font-weight:bold;">Placed in Jobs/self employed </th>
+      <th scope="col" style="font-family: Nunito;font-weight:bold;">Approx Annual Earnings in Rs. </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="font-family: Nunito;font-weight:bold;">Hospitality </th>
+      <td style="font-family: Nunito;font-weight:bold;">153</td>
+      <td style="font-family: Nunito;font-weight:bold;">83</td>
+      <td style="font-family: Nunito;font-weight:bold;">72,000</td>
+    </tr>
+    <tr>
+      <th scope="row" style="font-family: Nunito;font-weight:bold;">Retail</th>
+      <td style="font-family: Nunito;font-weight:bold;">150</td>
+      <td style="font-family: Nunito;font-weight:bold;">112</td>
+      <td style="font-family: Nunito;font-weight:bold;">60,000</td>
+    </tr>
+    <tr>
+      <th scope="row" style="font-family: Nunito;font-weight:bold;">Fashion Designing</th>
+      <td style="font-family: Nunito;font-weight:bold;">60</td>
+      <td style="font-family: Nunito;font-weight:bold;">53</td>
+      <td style="font-family: Nunito;font-weight:bold;"> As per market rates in nearby areas/Baramulla </td>
+    </tr>
+    <tr>
+      <th scope="row" style="font-family: Nunito;font-weight:bold;">Total</th>
+      <td style="font-family: Nunito;font-weight:bold;">360</td>
+      <td style="font-family: Nunito;font-weight:bold;">248 - (68% placements) </td>
+      <td style="font-family: Nunito;font-weight:bold;">-</td>
+    </tr>
+  </tbody>
+</table>
+<table class="table table-bordered table-dark" style="padding-top: 3%;">
+  <caption class="text-center">Table 2: Better market access to students enrolled in April – June 2019 period  </caption>
+  <thead>
+    <tr>
+      <th colspan="3" class="text-center">1st April to 30th June 2019</th>
+     </tr>
+    <tr>
+      <th scope="col" style="font-family: Nunito;font-weight:bold;">S.No. </th>
+      <th scope="col" style="font-family: Nunito;font-weight:bold;">Project</th>
+      <th scope="col" style="font-family: Nunito;font-weight:bold;">No. of Students</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row" style="font-family: Nunito;font-weight:bold;">1</th>
+      <td style="font-family: Nunito;font-weight:bold;">Fashion Design Project (students of 1 batch)</td>
+      <td style="font-family: Nunito;font-weight:bold;">30</td>
+          </tr>
+    <tr>
+      <th scope="row" style="font-family: Nunito;font-weight:bold;">2</th>
+      <td style="font-family: Nunito;font-weight:bold;">Retail (Students of 2 batch) </td>
+      <td style="font-family: Nunito;font-weight:bold;">60</td>
+      
+    </tr>
+    <tr>
+      <th scope="row" style="font-family: Nunito;font-weight:bold;">3</th>
+      <td style="font-family: Nunito;font-weight:bold;">Hospitality (Students of 2 batch) </td>
+      <td style="font-family: Nunito;font-weight:bold;">60</td>
+
+    </tr>
+    <tr>
+      <th scope="row" style="font-family: Nunito;font-weight:bold;">-</th>
+      <td style="font-family: Nunito;font-weight:bold;">Total</td>
+      <td style="font-family: Nunito;font-weight:bold;">150</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+</div>
+</div>
+</section> 
+<section style="background:white;padding-top: 1%;">
+  <div class="container">
+              <div class="row justify-content-center" data-aos="fade-right" style="margin-top:3%;" >
+                
+                  <h1 style="font-size: 2.5rem;color: black;">PROJECT <span style="color: #7971ea">PRESENTATION </span></h1>
+              
+
+              </div>
+  </div>
+  <iframe src="https://onedrive.live.com/embed?cid=BF3CB31BD91053C4&resid=BF3CB31BD91053C4%2117433&authkey=AJ8_h1s6GwEtJIk&em=2" width="100%" height="700px;" frameborder="0" scrolling="no"></iframe>
+  
+</section>
+ <style>
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+  	position:relative;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+    -moz-transform:scale(1.20); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.20); /* Opera */
+    transform:translatZ(0) scale(1.20);
+}
+
+.img-hover:hover:after {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    width:2px;
+    height:2px;
+}
+
+</style>
+ <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="background:#e6e8e2;">
+      <h1 style="font-size:2.5rem;padding-top: 2%;color: black">GALLERY</h1>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="row img-hover" style="margin-left: 5%;margin-right: 5%;margin-bottom: 5%">
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/valentino1.JPG" class="img-fluid ">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/recgall7.jpeg" class="img-fluid ">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/cellblr1.jpeg" class="img-fluid ">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/cellblr3.jpeg" class="img-fluid ">
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="row img-hover" style="margin-left: 5%;margin-right: 5%;margin-bottom: 5%">
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/cell4.jpg" style="width:385px;height: 289px;" >
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/recgall10.jpeg" style="width:385px;height:289px;">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/recgall8.jpeg" style="width:385px;height:289px">
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-3 thumb" style="padding-top: 2%">
+                <img src="/static/images/recnew.jpeg" style="width:385px;height:289px">
+            </div>
+          
+        </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="fas fa-chevron-circle-left" style="font-size: 40px;padding-top: 15%;color:white;" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="fas fa-chevron-circle-right" style="font-size: 40px;padding-top: 15%;color:white;" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+    
+  </div>
+{% endblock %}

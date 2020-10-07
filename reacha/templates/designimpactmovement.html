@@ -1,0 +1,223 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    <style>
+       @media screen and (max-width: 1920px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 800px;
+        }
+      }
+     @media screen and (max-width: 992px){
+
+        .howwedo-img{
+          max-width:350px;
+          height:auto;
+        }
+        .my-gallery{
+          height: 400px;
+        }
+      }
+    @media screen and (max-width: 600px) {
+
+        .howwedo-img{
+          width:300px;
+          height:auto;
+        }
+         .my-gallery{
+          height: 400px;
+        }
+
+}
+    .carousel-inner img {
+    width: 100%;
+    height: 100%
+    }
+
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+
+    .carousel-item img {
+        width: 100%
+    }
+       #custCarousel1 .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel1 .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel1 .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel1 .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel1 .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+       #custCarousel2 .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        color:black;
+    }
+
+    #custCarousel2 .carousel-indicators>li {
+        width: 100px
+    }
+
+    #custCarousel2 .carousel-indicators li img {
+        display: block;
+        opacity: 0.5
+    }
+
+    #custCarousel2 .carousel-indicators li.active img {
+        opacity: 1
+    }
+
+    #custCarousel2 .carousel-indicators li:hover img {
+        opacity: 0.75
+    }
+</style>
+
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="H8b8hcIs"></script>
+
+<!--MODALS-->
+
+
+    
+<section style="margin-top: 135px;">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid"  src="/static/images/design.png"  alt="First slide">
+        
+    </div>
+</div>
+</div>
+</section>
+    <section>
+ 
+              <div class="container">
+              <div class="row justify-content-center" data-aos="fade-right" style="padding-top: 3%;" >
+          <div class="col-lg-10 col-md-12" style="background: #b6985e;">
+                  <h1 style="color: black;font-size: 2.5rem;">ABOUT <span style="color: white">THE PROJECT</span></h1>
+          </div>
+          </div>
+              <div class="row justify-content-center" data-aos="fade-right" >
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <p data-aos="fade-left" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;;padding-top: 2%;line-height:30px;text-align:justify;">
+                  Titan Company Limited is launching a program called Design Impact Movement with REACHA as the primary partner. This movement seeks to help aspiring innovators amongst the country’s youth reach their potential while also giving back to the society. It intends to inspire young<br><br>
+people to take up designing for social impact and help them in the creation of their products for the same, if any. 
+<br><br>
+The Project aims at creating an awareness for and promoting tangible design innovations that solve pressing social issues and provide an ecosystem which connects all the entities in the product design space from the problem source to the public. <br><br>
+
+<span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">Strengthening the Design Impact Awards:</span><br><br>
+The engagement is a natural evolution of the Design Impact Awards <a href="https://designimpactawards.in" target="_blank">(https://designimpactawards.in/)</a> program from supporting grantees who are creating product designs for social impact to inspiring more young minds to design for social impact This will further strengthen the Awards in future editions, both with the number and the quality of participation through direct outreach of the Movement and the public recall of the brand.<br><br> 
+
+
+<span style="font-weight:700">Last date for submission of completed application - 5pm on 1st September 2020</span><br><br> 
+ 
+                </p>
+            </div>
+            <div class='col-lg-2 col-md-2 col-sm-2' style="background: white;margin-top: 2%;height: 200px;">
+             <p style="text-align:center;font-family: Georgia,serif;font-size: 12px;font-style: italic;color:black;margin-top: 10px;">In this Page</p>
+             <p style="font-family: ff-din-web,sans-serif;font-style: normal;font-weight: 500;color: #3086ab;text-transform: uppercase;font-size: 12px;">About The Project</p>
+  
+             
+           
+         
+             
+
+          </div>
+        </div>
+<div class="row justify-content-center" style="padding-bottom: 2%;" data-aos="fade-left">
+<div class="col-md-8 col-lg-8 justify-content-center">
+   
+<img src="/static/images/design.jpg" style="border-radius: 10px;border:2px solid black;" class="img-fluid">
+
+</div>
+</div>
+<div class="row justify-content-center"  data-aos="fade-left" style="padding: 10px">
+    <div class="col-md-10 col-lg-10 col-sm-10">
+                  <p data-aos="fade-right" style="color:rgb(0,0,0,0.9);font-size: 16px;font-family:Georgia,serif;padding-top: 2%;line-height:30px;border-top:2px solid black;text-align: justify;"><span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">Building an Ecosystem:</span><br><br> 
+There are multiple stakeholders who need to be involved in the journey of an innovator from community connects and subject matter experts to maker-spaces and manufacturing spaces to incubators and funders. The movement would seek to build and strengthen the ecosystem which connects all the different entities in the design impact space.<br><br> 
+
+**In light of the above, REACHA invites ‘Expression of Interest (EoI)’ / applications from interested parties / individuals as the case may be:<br><br>
+ <span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">1) Agency for Design & Implementation:</span><br><br>
+
+For support in the design and implementation of Design Impact: Movement, a flagship CSR initiative of Titan Company Ltd. The agency is expected to provide strategic inputs and advisory support to ensure the accomplishment of programme objectives and desired milestones.** <br><br>
+To download the EoI ZIP Folder - <a href="http://maitreya.wikidot.com/local--files/titan-csr-projects/DI%20MOVEMEMT%20-%20EOI%20-%201.zip"> CLICK HERE</a> <br><br>
+<span style="font-weight:700">Last date for submission of completed application - 5pm on 1st September 2020</span><br><br>
+
+<span style="font-weight:700">Application submission date has been extended to 5pm on 8th September 2020</span><br><br>
+<span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">2) Production Lead - Masterclasses:</span><br><br>
+
+REACHA is looking to hire a production lead who can help produce and edit educational videos for the Design Impact Movement’s tech platform (Masterclass series). The Masterclass series aims to engage and enable student participants on the platform, to learn from subject matter experts (hereinafter referred as SMEs) on a range of topics centered around “designing for social impact”, keeping in mind the Indian context. The production lead on-boarded will be required to plan each production phase and produce high quality videos for the Masterclass series.<br><br>
+<span style="font-weight:700">Production Lead - Masterclasses is a Contractual position for a period of 4 months - September 2020 to December 2020<br><br>
+
+Selection is through Walk-in Online interview during the period - 27 August 2020 - 1 September 2020<br><br>
+To download the Job Description (JD) -</span><a href="http://maitreya.wikidot.com/local--files/titan-csr-projects/JD_Production%20Lead_Masterclass.pdf"> CLICK HERE</a><br><br>
+<span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">3) Creative Team:</span><br><br>
+
+REACHA is looking for an agency to help with the promotional creative content generation for the Design Impact initiative’s social media handles and web-based Tech Platform. The agency’s key role is to ensure that the content on the website and social media sites are of high quality, consistent and representative of the Design Impact: Movement until the program launch. The objective is to increase engagement and awareness around the program to make the path to social impact designing more accessible and inclusive.<br><br>
+<span style="font-weight:700">To download the EoI ZIP Folder -</span><a href="http://maitreya.wikidot.com/local--files/titan-csr-projects/DI%20MOVEMENT%20-%20EOI%20-%202.zip"> CLICK HERE</a> <br><br>
+
+<span style="font-weight:700">Last date for submission of completed application - 5pm on 10th September 2020</span> 
+<span style="font-weight:700">Last date extended to 5pm on 17th September 2020</span><br><br>
+<span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">4) Content Development:</span><br><br>
+REACHA is seeking an agency who can help in the development and review of written content for Design Impact: Movement’s website. The job entails, ensuring that the content in the website is of a high quality as it is a key element that is representative of the Design Impact: Movement and maintenance of the accessible, youthful and conversational tone of the website.<br><br>
+<span style="font-weight:700">To download the EoI ZIP Folder -</span><a href="http://maitreya.wikidot.com/local--files/titan-csr-projects/3.1%20OK%20EOI_Content%20Development_Tech%20Platform.zip"> CLICK HERE</a> <br><br>
+<span style="font-weight:700">Last date for submission of completed application - 5pm on 27th September 2020.</span><br><br>
+<span style="font-weight:700">Last date extended to 5pm on 5th October 2020</span><br><br>
+<span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">5) INSTRUCTIONAL DESIGNER - MASTERCLASSES:</span><br><br>
+REACHA is looking to hire an Instructional Designer for the Design Impact Movement’s tech platform (Masterclass series). The instructional designer will be required to create the framework of all the Learning Modules for the users and help in creation of the final output content for the Learning Modules (be it video modules, presentations, or case studies. The Masterclass series aims to engage and enable student participants on the platform, to learn from subject matter experts (hereinafter referred as SMEs) on a range of topics centered around “designing for social impact”, keeping in mind the Indian context. The production lead on-boarded will be required to plan each production phase and produce high quality videos for the Masterclass series.<br><br>
+<span style="font-weight:700">Instructional Designer - Masterclasses is a Contractual position for a period of 3 months – 1 October 2020 to 31 December 2021</span><br><br>
+<span style="font-weight:700">Selection is through Walk-in Online interview during the period - 28 September 2020 - 3 October 2020</span><br><br>
+<span style="font-weight:700">To download the Job Description (JD) - <a href="http://maitreya.wikidot.com/local--files/titan-csr-projects/1.1.2%20Instructional%20Designer.pdf"> CLICK HERE</span></a><br><br>
+<span style="text-transform: uppercase;color: #70b6bc;font-weight: 700;">6) BRAND STRATEGIST AND DESIGN CONSULTANT - BRANDING:</span><br><br>
+REACHA is looking to hire Brand Strategist and Design Consultant for the Design Impact Movement’s Branding. The brand strategist onboarded, will be expected to develop an operational plan that builds out the branding and communication of the project while working along with the program’s creative team and providing guidance where needed. The brand strategist will also be responsible for determining the brand & design language for the program, based on the overall intent and target audience for the project.<br><br>
+<span style="font-weight:700">Brand strategist and Design Consultant is a Contractual position for a period of 5 ½ months – 1 October 2020 to 15 March 2021</span><br><br>
+<span style="font-weight:700">Selection is through Walk-in Online interview during the period - 28 September 2020 - 3 October 2020</span><br><br>
+<span style="font-weight:700">To download the Job Description (JD) - <a href="http://maitreya.wikidot.com/local--files/titan-csr-projects/2.1.1%20Brand%20strategist%20and%20Design%20Consultant.pdf">  CLICK HERE </a>
+
+
+</div>
+</p>
+</div>
+</div>
+</div>
+</section>
+{% endblock %}
